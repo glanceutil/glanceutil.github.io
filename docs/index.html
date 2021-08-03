@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ", initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"> -->
+        <style>
+            body {
+                overflow: hidden;
+            }
+            @media screen and (max-width: 640px) {
+                :root {
+                    --main-top-height: 20px;
+                    --main-menu-width: 100px;
+                }
+            }
+            @media screen and (min-width:641px) {
+                :root {
+                    --main-top-height: 20px;
+                    --main-menu-width: 180px;
+                }
+            }
+            .mainTop {
+                width:100%;
+                height: var(--main-top-height);
+                /* border: 1px solid yellow; */
+            }
+            .mainMenu {
+                width: var(--main-menu-width);
+                height: calc(100% - var(--main-top-height) - 4px);
+                float: left;
+                /* border: 1px solid red; */
+                overflow: auto;
+            }
+            .mainScreen {
+                width: calc(100% - var(--main-menu-width) - 20px);
+                height: calc(100% - var(--main-top-height) - 14px);
+                float: left;
+                border: 1px solid #fff1cc;
+                overflow: auto;
+                padding: 5px;
+            }
+        </style>
+        <title>
+            GlanceNet v3
+        </title>
+    </head>
+    <body>
+        <div id="main_top" class="mainTop"></div>
+        <div id="main_menu" class="mainMenu"></div>
+        <div id="main_screen" class="mainScreen"></div>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#main_menu").load("./menu.html");
+            $("#main_screen").load("./about.html");
+        });
+        function goPage(self, page_html) {
+            $("#main_screen").load("./" + page_html);
+        }
+    </script>
+</html>

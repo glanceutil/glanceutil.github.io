@@ -1,0 +1,94 @@
+<style>
+    .menuSection {
+        margin: 0; 
+        padding: 10px;
+        font: 12px/20px "돋움";
+        background: #fff;
+        color: #424242;
+        display: block;
+    }
+    .menuSection .menuChild {
+        margin: 5px 0;
+        padding: 0;
+        display: block;
+    }
+    .menuSection .menuChild a:hover {
+        background: #2288dd;
+        color: #fff;
+        background: -moz-linear-gradient(top, #6bb2ff, #2288dd); /*그라디언트 지정*/
+        background: -webkit-gradient(linear, left top, left bottom, from(#6bb2ff), to(#2288dd));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff6bb2ff, endColorstr=#ff2288dd);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff6bb2ff, endColorstr=#ff2288dd)";
+    }
+    .menuSection .menuChild a {
+        display: block;
+        margin: 0;
+        padding: 10px;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: normal;
+        text-decoration: none;
+        background: #fecc45;
+        color: #424242;
+    
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        text-shadow: 2px 2px 2px #aeaeae;
+        filter: dropshadow(color=#aeaeae, offx=2, offy=2);
+        background: -moz-linear-gradient(top, #cecece, #8f8f8f);
+        background:- webkit-gradient(linear, left top, left bottom, from(#cecece), to(#8f8f8f));
+    }
+    
+    .menuSub {
+        margin: 0; 
+        padding-left: 15px;
+        font: 12px/20px "돋움";
+        background: #fff;
+        color: #424242;
+        display: block;
+    }
+    .menuSub .menuChild a:hover {
+        background: #2288dd;
+        color: #fff;
+        background: -moz-linear-gradient(top, #6bb2ff, #2288dd); /*그라디언트 지정*/
+        background: -webkit-gradient(linear, left top, left bottom, from(#6bb2ff), to(#2288dd));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff6bb2ff, endColorstr=#ff2288dd);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff6bb2ff, endColorstr=#ff2288dd)";
+    }
+    .menuSub .menuChild a {
+        display: block;
+        margin: 0;
+        padding: 10px;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: normal;
+        text-decoration: none;
+        background: #ffeab1;
+        color: #424242;
+    
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        text-shadow: 2px 2px 2px #aeaeae;
+        filter: dropshadow(color=#aeaeae, offx=2, offy=2);
+        background: -moz-linear-gradient(top, #cecece, #8f8f8f);
+        background:- webkit-gradient(linear, left top, left bottom, from(#cecece), to(#8f8f8f));
+    }
+</style>
+
+    <ul class="menuSection">
+        <li class="menuChild"> 
+            <h1>
+                <div style="display:block;">Glance</div>
+                <div style="display:block;">Net v3</div>
+            </h1>
+        </li>
+        <li class="menuChild"> <a href="javascript:goPage(this, 'about.html');"> About </a> </li>
+        <li class="menuChild"> <a href="javascript:void(0);">Manual </a>
+            <ul class="menuSub">
+                <li class="menuChild"> <a href="javascript:goPage(this, 'manual.glancenet.html');">Basic usage </a> </li>
+                <li class="menuChild"> <a href="javascript:goPage(this, 'manual.script.html');">Script usage </a> </li>
+            </ul>
+        </li>
+        <li class="menuChild"> <a href="javascript:goPage(this, 'download.html');"> Download </a> </li>
+    </ul>
+
