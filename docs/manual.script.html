@@ -1,41 +1,45 @@
-<html>
-    <head>
-        <style>
-            .mnu_page {
-                -display: flex;
-            }
-            .menual_page {
-                padding-left: 5px;
-                margin-bottom: 32px;
-            }
-            .section_text {
-                padding-left: 5px;
-                padding-bottom: 20px;
-            }
-            .tl_title {
-                border-top: #fecc45 solid 2px;
-                border-left: #fecc45 solid 10px;
-                border-bottom: #fecc45 solid 2px;
-            }
-            .tl_section {
-                border-bottom: #fecc45 solid 2px;
-                color: #ffbe0d;
-            }
-            .tl_line {
-                text-indent: 1.5em;
-            }
-            .tl_lsub {
-                padding-left: 2.5em;
-                text-indent: 1.5em;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="menual_page">
-            <div>
-                <h2 class="tl_title">Script description</h2>
-                <div class="section_text">
-                    <div class="tl_line"> 
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQDM7PB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<style>
+    .mnu_page {
+        -display: flex;
+    }
+    .menual_page {
+        padding-left: 5px;
+        margin-bottom: 32px;
+    }
+    .section_text {
+        padding-left: 5px;
+        padding-bottom: 20px;
+    }
+    .tl_title {
+        border-top: #fecc45 solid 2px;
+        border-left: #fecc45 solid 10px;
+        border-bottom: #fecc45 solid 2px;
+    }
+    .tl_section {
+        border-bottom: #fecc45 solid 2px;
+        color: #ffbe0d;
+    }
+    .tl_line {
+        text-indent: 1.5em;
+    }
+    .tl_lsub {
+        padding-left: 2.5em;
+        text-indent: 1.5em;
+    }
+</style>
+
+<div class="menual_page">
+    <div>
+        <h2 class="tl_title">Script description</h2>
+        <div class="section_text">
+            <div class="tl_line"> 
 <!-- 
 GlanceNet의 Script 기능은 javascript의 기본적인 기능을 지원합니다.
 (Compiler는 JerryScript를 사용합니다. )
@@ -46,25 +50,25 @@ GlanceNet의 Script 기능을 사용하기 위해선 Global Object인 'glance'�
 Script function of GlanceNet supports basic functions of javascript.
 (Compiler uses JerryScript.)
 In order to use GlanceNet's script function, you can cut or combine Packets using 'glance', a global object.
-                    </div>
-                    <div class="tl_line"> 
+            </div>
+            <div class="tl_line"> 
 It will be easier to understand if you look at the example file (glance.js).
 (Glance.js script file can be downloaded from the Download menu.)
-                    </div>
-                </div>
             </div>
         </div>
+    </div>
+</div>
 
-        <div class="menual_page">
-            <div>
-                <h2 class="tl_title">Script functions</h2>
-            </div>
-            <div class="section_text">
-                <div class="tl_section"> Function : glance.getLengthSize = function() </div>
-                <div class="tl_line">   Brief : size of packet length </div>
-                <div class="tl_line">   Return : string or number </div>
-                <div class="tl_line">   Description 
-                    <div class="tl_lsub">
+<div class="menual_page">
+    <div>
+        <h2 class="tl_title">Script functions</h2>
+    </div>
+    <div class="section_text">
+        <div class="tl_section"> Function : glance.getLengthSize = function() </div>
+        <div class="tl_line">   Brief : size of packet length </div>
+        <div class="tl_line">   Return : string or number </div>
+        <div class="tl_line">   Description 
+            <div class="tl_lsub">
 <!--
 length-size는 Packet 길이의 크기로 전송 혹은 수신할 Packet의 길이 크기를 의미 합니다. Packet의 길이 만큼 수신 완성된 Packet을 구합니다.
 Packet의 길이 부분이 없다면 '0'의 값을 리턴합니다.
@@ -73,21 +77,21 @@ Packet의 길이 부분이 없다면 '0'의 값을 리턴합니다.
 length-size is the size of the packet length and means the length of the packet to be transmitted or received. Gets the received packet as much as the length of the packet.
 If there is no length part of the Packet, a value of '0' is returned.
 (In the case of HTTP protocol, there is no packet length. Therefore, the size of the packet length becomes '0'.) 
-                    </div>
-                </div>
             </div>
-            
-            <div class="section_text">
-                <div class="tl_section"> Function: glance.getPacketLength = function(packet, issend, connid) </div>
-                <div class="tl_line">   Brief : size of packet length </div>
-                <div class="tl_line">   Return : string or number </div>
-                <div class="tl_line">   Arguments
-                    <div class="tl_line">   - packet (Uint8Array): Packet-Data </div>
-                    <div class="tl_line">   - issend (boolean) : send is true or false </div>
-                    <div class="tl_line">   - connid (string) : Connection-ID </div>
-                </div>
-                <div class="tl_line">   Description 
-                    <div class="tl_lsub">
+        </div>
+    </div>
+    
+    <div class="section_text">
+        <div class="tl_section"> Function: glance.getPacketLength = function(packet, issend, connid) </div>
+        <div class="tl_line">   Brief : size of packet length </div>
+        <div class="tl_line">   Return : string or number </div>
+        <div class="tl_line">   Arguments
+            <div class="tl_line">   - packet (Uint8Array): Packet-Data </div>
+            <div class="tl_line">   - issend (boolean) : send is true or false </div>
+            <div class="tl_line">   - connid (string) : Connection-ID </div>
+        </div>
+        <div class="tl_line">   Description 
+            <div class="tl_lsub">
 <!--
 한 Packet의 길이를 return 한다.
 (보통 Packet의 길이를 계산한다. 만약 길이가 없다면 표시 하고자 하는 Packet의 총 길이 값을 return 한다.)
@@ -96,28 +100,26 @@ HTTP Protocol은 Packet의 길이가 없고, "\r\n" 을 이용하여 Packet을 �
 Returns the length of one packet.
 (Usually, the length of the packet is calculated. If there is no length, the total length of the packet to be displayed is returned.)
 Since HTTP protocol does not have a packet length and uses "\r\n" to separate packets, you need to use "\r\n" in the corresponding function to find the length of the entire packet.)
-                    </div>
-                </div>
             </div>
-            
-            <div class="section_text">
-                <div class="tl_section"> Function: glance.getPacketStruct = function(packet, issend) </div>
-                <div class="tl_line">   Return      : object </div>
-                <div class="tl_line">   Arguments
-                    <div class="tl_line">   - packet (Uint8Array): Packet-Data </div>
-                    <div class="tl_line">   - issend (boolean) : send is true or false </div>
-                </div>
-                <div class="tl_line">   Brief  : size of packet length </div>
-                <div class="tl_line">   Description
-                    <div class="tl_lsub">
+        </div>
+    </div>
+    
+    <div class="section_text">
+        <div class="tl_section"> Function: glance.getPacketStruct = function(packet, issend) </div>
+        <div class="tl_line">   Return      : object </div>
+        <div class="tl_line">   Arguments
+            <div class="tl_line">   - packet (Uint8Array): Packet-Data </div>
+            <div class="tl_line">   - issend (boolean) : send is true or false </div>
+        </div>
+        <div class="tl_line">   Brief  : size of packet length </div>
+        <div class="tl_line">   Description
+            <div class="tl_lsub">
 <!--
 glance.getPacketStruct 함수는 Packet Dialog 에서 Structure 를 보여 줄때 호출되는 함수 입니다.
 Object 형태로 return 해야 하며, return 된 Object를 Grid에 표시됩니다.
 -->
 The glance.getPacketStruct() function is called when the structure is displayed in the Packet Dialog.
 It must be returned in the form of Object, and the returned object is displayed on the Grid.                </div>
-                </div>
-            </div>
         </div>
-    </body>
-</html>
+    </div>
+</div>
