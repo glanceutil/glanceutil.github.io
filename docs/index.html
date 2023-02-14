@@ -14,7 +14,11 @@
             gtag('config', 'G-GF7BKK2K82');
         </script>
         <style>
+            html {
+                height: 100%;
+            }
             body {
+                height: 100%;
                 overflow: hidden;
             }
             @media screen and (max-width: 640px) {
@@ -36,17 +40,18 @@
             }
             .mainMenu {
                 width: var(--main-menu-width);
-                height: calc(100% - var(--main-top-height) - 4px);
+                --height: calc(100% - var(--main-top-height) - 4px);
+                height: 0;
                 float: left;
                 /* border: 1px solid red; */
                 overflow: auto;
             }
             .mainScreen {
                 width: calc(100% - var(--main-menu-width) - 20px);
-                height: calc(100% - var(--main-top-height) - 14px);
+                --height: calc(100% - var(--main-top-height) - 14px);
                 float: left;
                 border: 1px solid #fff1cc;
-                overflow: auto;
+                --overflow: auto;
                 padding: 5px;
             }
         </style>
