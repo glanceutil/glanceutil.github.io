@@ -37,21 +37,21 @@
                 width:100%;
                 --height: var(--main-top-height);
                 /* border: 1px solid yellow; */
+                height: 0;
             }
             .mainMenu {
                 width: var(--main-menu-width);
                 height: calc(100% - var(--main-top-height) - 4px);
-                height: 0;
                 float: left;
                 /* border: 1px solid red; */
                 overflow: auto;
             }
             .mainScreen {
                 width: calc(100% - var(--main-menu-width) - 20px);
-                --height: calc(100% - var(--main-top-height) - 14px);
+                height: calc(100% - var(--main-top-height) - 14px);
                 float: left;
                 border: 1px solid #fff1cc;
-                --overflow: auto;
+                overflow: auto;
                 padding: 5px;
             }
         </style>
